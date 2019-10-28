@@ -1,4 +1,79 @@
-void solveMaze()
+//Level 0
+void level0()
+{
+  exampleSolution();
+}
+
+//Level 1
+void level1()
+{
+  exampleSolution();
+}
+
+//Level 2
+void level2()
+{
+  exampleSolution();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void exampleSolution()
 {
   while (true)
   {
@@ -25,81 +100,6 @@ void solveMaze()
     }
   }
 }
-
-//Level 0
-void level0()
-{
-  solveMaze();
-}
-
-//Level 1
-void level1()
-{
-  solveMaze();
-}
-
-//Level 2
-void level2()
-{
-  solveMaze();
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 maze m = new maze();
 int currentMove = 0, currentMaze = 0;
