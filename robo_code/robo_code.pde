@@ -2,9 +2,9 @@ void solveMaze()
 {
   while (true)
   {
-    if (blockInFront())
+    if (wallInFront())
     {
-      if (blockOnRight())
+      if (wallOnRight())
       {
         turnLeft();
       } else
@@ -14,7 +14,7 @@ void solveMaze()
       }
     } else
     {
-      if (blockOnRight())
+      if (wallOnRight())
       {
         moveForward();
       } else
@@ -174,22 +174,22 @@ void turnLeft()
   m.turnLeft();
 }
 
-boolean blockInFront()
+boolean wallInFront()
 {
   moves[currentMove++] = 4;
-  return m.blockInFront();
+  return m.wallInFront();
 }
 
-boolean blockOnRight()
+boolean wallOnRight()
 {
   moves[currentMove++] = 5;
-  return m.blockOnRight();
+  return m.wallOnRight();
 }
 
-boolean blockOnLeft()
+boolean wallOnLeft()
 {
   moves[currentMove++] = 6;
-  return m.blockOnLeft();
+  return m.wallOnLeft();
 }
 
 void runMove(int move)
@@ -208,13 +208,13 @@ void runMove(int move)
     m.turnLeft();
     break;
   case 4:
-    m.blockInFront();
+    m.wallInFront();
     break;
   case 5:
-    m.blockOnRight();
+    m.wallOnRight();
     break;
   case 6:
-    m.blockOnLeft(); 
+    m.wallOnLeft(); 
     break;
   default:
     break;

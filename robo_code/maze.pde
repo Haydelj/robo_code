@@ -172,21 +172,21 @@ class maze
     return true;
   }
 
-  boolean blockInFront()
+  boolean wallInFront()
   {
     checkDirection = dir;
     checkResualt = blockInDirection(checkDirection);
     return checkResualt;
   }
 
-  boolean blockOnRight()
+  boolean wallOnRight()
   {
     checkDirection = ((dir+1) % 4);
     checkResualt = blockInDirection(checkDirection);
     return checkResualt;
   }
 
-  boolean blockOnLeft()
+  boolean wallOnLeft()
   {
     checkDirection = ((dir+3) % 4);
     checkResualt = blockInDirection(checkDirection);
